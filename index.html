@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MafiHolo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+   
+</head>
+<body  /*class="body-background" */  >
+    <audio id="myAudio">
+        <source src="pics/Careless Whisper.mp3" type="audio/ogg">
+        <source src="pics/Careless Whisper.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      
+      <!-- <p>Click the buttons to play or pause the audio.</p> -->
+      
+      <button  onclick="playAudio()" type="button">Play</button>
+      <button  onclick="pauseAudio()" type="button">Pause</button> 
+      <script src="audio.js"></script>
+      
+    <header>
+        <div class="container">
+            
+            <h1><b>Mafia Wars: The Prohibition</b></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#inspiration">Inspiration</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#rulebook">RuleBook</a></li>
+                    <li><a href="#flowchart">Flowchart</a></li>
+                    <li><a href="#quant">Quantitative Analysis</a></li>
+                    <li><a href="#desc">Descriptions</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#ref">References</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About the Game</h2>
+            <p>
+                <strong>Mafia Wars: The Prohibition</strong> is an engaging board game prototype set in the tumultuous era of the <em>1920s Prohibition</em>, a time when the United States government enacted the 18th Amendment, banning the manufacture, sale, and transportation of alcoholic beverages. This period, from <strong>1920 to 1933</strong>, gave rise to a vibrant and often violent underground economy, as organized crime syndicates stepped in to meet the public's demand for illegal alcohol.
+            </p>
+            <p>
+                Cities across the United States became battlegrounds for control over the lucrative black market for booze, with notorious figures like <strong>Al Capone</strong> in Chicago and <strong>Lucky Luciano</strong> in New York building criminal empires through bribery, extortion, and ruthless violence. Speakeasies, illicit bars hidden from the authorities, flourished as hubs of nightlife and culture, often protected by the very law enforcement officials tasked with shutting them down.
+            </p>
+            <p>
+                Prohibition inadvertently led to the professionalization of organized crime, with <em>mafia families</em> operating with military-like precision, employing bootleggers to smuggle alcohol, establishing clandestine breweries and distilleries, and creating a sophisticated network of corruption and influence. 
+            </p>
+            <p>
+                Players take on the roles of influential <strong>mafia bosses</strong>, each with their own unique abilities and resources, strategically managing their resources, forming alliances, and outmaneuvering rivals to dominate the underworld by controlling key businesses such as speakeasies, gambling dens, and smuggling operations.
+            </p>
+        </div>
+    </section>
+
+    <section id="desc">
+        <div class="container">
+            <h2>Description of The Game</h2>
+            <p>The game is played over <strong>30 turns</strong>, each consisting of various actions players can take. At the beginning of each turn, a market card is drawn to set the price of goods. Players then roll a six-sided die to determine their order of play for that round. Actions include <strong>producing goods, building structures, leveling up structures, dismantling structures,</strong> and <strong>selling goods</strong>. Players can also <strong>trade</strong> or engage in <strong>attacks</strong> such as <strong>robbing</strong> or <strong>sabotaging</strong> other players' structures.</p>
+            <p>To <strong>sell goods</strong>, players move their pieces toward market spaces and throw dice to determine success based on their proximity to the market. <strong>Trading</strong> requires mutual agreement and use of the bargain table to set prices. <strong>Attacks</strong> involve dice rolls to determine success and can result in gaining or losing <strong>fame tokens</strong>.</p>
+            <p>The goal is to accumulate the most points by the end of the game, earned through <strong>fame, structures,</strong> and <strong>money</strong>. <strong>Fame</strong> can be gained or lost through various actions, such as injuring players, sabotaging structures, or failing to achieve certain goals.</p>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Game Features</h2>
+            <ul>
+                    <li>
+                      <strong>Production Structures</strong>: Players build and level up structures like Breweries, Mines, Forgeries, and Armories to produce goods. Each structure can be upgraded to produce more batches of goods at higher levels.
+                    </li>
+                    <li>
+                      <strong>Safe Houses</strong>: Structures like Cellars, Treasuries, Vaults, and Arsenals store goods. Higher-level safe houses have larger storage capacities.
+                    </li>
+                    <li>
+                      <strong>Weapon Structures</strong>: Includes Tommy Gun Nests, Sniper’s Perches, Dynamite Gates, and TripWire Bombs, which provide protection and offensive capabilities.
+                    </li>
+                    <li>
+                      <strong>Market and Trading</strong>: Players sell goods at markets located in the corners of the game board. They can also trade with other players using the bargain tables to set prices.
+                    </li>
+                    <li>
+                      <strong>Fame Tokens</strong>: Earned through successful actions like robbing, sabotaging, or destroying opponent structures. Fame tokens contribute to the final score.
+                    </li>
+                    <li>
+                      <strong>Rounds and Turns</strong>: The game lasts 30 turns. Each turn, players draw market cards, roll dice for actions, and execute various strategies to accumulate points.
+                    </li>
+                    <li>
+                      <strong>Winning the Game</strong>: Points are awarded based on fame, structures built, and money earned. The player with the most points at the end of 30 turns wins the game.
+                    </li>
+
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="inspiration">
+        <div class="container">
+            <h2>Inspiration</h2>
+            <p>The game <strong>Mafia Wars</strong> draws inspiration from the intricate world of mafia operations, emulating the strategic depth and competitive nature of organized crime. Drawing elements from classic mafia tales, the game encapsulates the essence of power struggles, territorial control, and resource management.</p>
+            <p>The thematic backdrop is influenced by the prohibition era, where underground operations, production of illicit goods, and fierce battles for supremacy were prevalent. The game mechanics, including production structures, safehouses, and weapons, reflect the clandestine activities of the time.</p>
+            <p>Players must navigate through strategic decisions, alliances, and betrayals, mirroring the intense dynamics of mafia life. The game aims to provide an immersive experience, capturing the tension and excitement of becoming the most powerful mafia boss.</p>
+        </div>
+    </section>
+
+    
+    <section id="rulebook">
+        <div class="container">
+            <h2>RuleBook</h2>
+            <p>Welcome to the world of mafia, guns, booze, and gold RULEBOOK. Dive into an epic adventure where you rule the underworld.</p>
+        </div>
+    </section>
+
+
+    <section id="flowchart">
+        <div class="container">
+            <h2>FlowChart</h2>
+            <p>Welcome to the world of mafia, guns, booze, and gold Flowchart. Dive into an epic adventure where you rule the underworld.</p>
+        </div>
+    </section>
+
+
+    <section id="quant">
+        <div class="container">
+            <h2>Quantitative Analysis of Game Balance</h2>
+            <p>Welcome to the world of mafia, guns, booze, and gold QUANT. Dive into an epic adventure where you rule the underworld.</p>
+        </div>
+    </section>
+
+
+
+    <section id="team">
+        <div class="container">
+            <h2>Team</h2>
+            <p>Welcome to the world of mafia, guns, booze, and gold TEAM. Dive into an epic adventure where you rule the underworld.</p>
+        </div>
+    </section>
+
+
+    <section id="ref">
+        <div class="container">
+            <h2>References</h2>
+            <p>Welcome to the world of mafia, guns, booze, and gold REFERENCES. Dive into an epic adventure where you rule the underworld.</p>
+        </div>
+    </section>
+    
+
+    <section id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-images">
+                <div class="gallery-section">
+                    <h3>Guns</h3>
+                    <img src="pics/guns.jpg" alt="Guns">
+                </div>
+                <div class="gallery-section">
+                    <h3>Booze</h3>
+                    <img src="pics/booze.jpg" alt="Booze">
+                </div>
+                <div class="gallery-section">
+                    <h3>Precious Metals</h3>
+                    <img src="pics/gold.jpg" alt="Gold">
+                </div>
+                <div class="gallery-section">
+                    <h3>Artefacts</h3>
+                    <img src="pics/drugs.jpg" alt="Drugs">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; SFU  Summer 2024  IAT 210  OL01  Board Game Project  <b>Group 1</b></p>
+        </div>
+    </footer>
+</body>
+</html>
