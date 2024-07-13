@@ -21,13 +21,19 @@ header h1 {
     font-size: 50px;
 }
 
+h2{
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+}
+
 p{
     font-family: "Josefin Sans", sans-serif;
-    font-size: 17px;
+    font-size: 19px;
     line-height: 1.5;
     word-spacing: 0.01em; /* Increased word spacing */
     color: gold; /* Semi-transparent black */
     text-align: justify;
+
 }
 
 ul {
@@ -60,11 +66,13 @@ nav {
 }
 
 nav ul {
-    list-style: none;
+    list-style:disc;
+    display: inline-block;
     display: flex;
     justify-content: center;
     margin: 0;
     padding: 0;
+    white-space: nowrap; 
 }
 
 nav ul li {
@@ -73,6 +81,7 @@ nav ul li {
 }
 
 nav ul li a {
+    font-size: 19px;
     color: gold;
     text-decoration: none;
     font-weight: bold;
@@ -140,4 +149,57 @@ footer {
     color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
     text-align: center;
     padding: 10px;
+}
+iframe{
+  padding-top: 20px;
+}
+a{
+    font-family: monospace;
+    font-size: 15px;
+    color: rgb(223, 137, 32);
+}
+
+
+#flowchart img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+.CLICK {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 13px;
+    color: rgb(255, 240, 102); /* Gold color */
+    text-align: center;
+    margin-top: 10px;
+    text-decoration:wavy; /* Add underline */
+}
+.FindFlowchartBelow{
+text-align: center;
+}
+#flowchart h2 {
+    text-align: center;
+}
+.team-members {
+    list-style-type: none;
+    padding: 0;
+}
+
+.team-members li {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Darker transparent black */
+    border: 1px solid gold;
+    border-radius: 10px;
+}
+
+.team-members li h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.team-members li p {
+    font-size: 16px;
+    line-height: 1.5;
 }
