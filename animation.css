@@ -50,7 +50,7 @@
 }
 .container .box {
   transform-style: preserve-3d;
-  animation: animate 8s ease-in-out 1 forwards, fadeOut 0s ease-in-out 7s forwards;
+  animation: animate 5s ease-in-out 1 forwards, fadeOut 0s ease-in-out 5s forwards;
 }
 @keyframes fadeOut {
   0% {
