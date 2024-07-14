@@ -159,6 +159,9 @@ a{
     font-size: 15px;
     color: rgb(223, 137, 32);
     inline-size: auto;
+}
+#playTesting a{
+    font-size: 20px;
     margin-right: 20px;
 }
 
