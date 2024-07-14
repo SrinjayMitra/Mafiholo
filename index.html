@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="animation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,8 +20,8 @@
 </head>
 <body  /*class="body-background" */  >
     <audio id="myAudio">
-        <source src="pics/StandByMe.mp3" type="audio/ogg">
-        <source src="pics/StandByMe.mp3" type="audio/mpeg">
+        <source src="pics/ArjanVailly.mp3" type="audio/ogg">
+        <source src="pics/ArjanVailly.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
       
@@ -304,30 +305,151 @@
     
 
     <section id="gallery">
+    <div class="container">
+    <h2 class ="gallery-head">Gallery</h2>
+    <p class ="gallery-head-p">click on image to view it better</p>
+
+
+
+    <section id="gallery">
         <div class="container">
-            <h2>Gallery</h2>
-            <div class="gallery-images">
-                <div class="gallery-section">
-                    <h3>Guns</h3>
-                    <img src="pics/guns.jpg" alt="Guns">
+            <h2>Production</h2>
+            <div class="production-sections">
+                <div class="production-section">
+                    <h3>Brewery</h3>
+                    <img src="Pics/Brewery.png" alt="Brewery"onclick="openModal(this)">
+                    <p>Produces batches of booze</p>
                 </div>
-                <div class="gallery-section">
-                    <h3>Booze</h3>
-                    <img src="pics/booze.jpg" alt="Booze">
+                <div class="production-section">
+                    <h3>Mines</h3>
+                    <img src="Pics/Mines.png" alt="Mines"onclick="openModal(this)">
+                    <p>Produces batches of precious metals</p>
                 </div>
-                <div class="gallery-section">
-                    <h3>Precious Metals</h3>
-                    <img src="pics/gold.jpg" alt="Gold">
+                <div class="production-section">
+                    <h3>Forgery</h3>
+                    <img src="Pics/Forgery.png" alt="Forgery"onclick="openModal(this)">
+                    <p>Produces batches of artifacts</p>
                 </div>
-                <div class="gallery-section">
-                    <h3>Artefacts</h3>
-                    <img src="pics/drugs.jpg" alt="Drugs">
+                <div class="production-section">
+                    <h3>Armory</h3>
+                    <img src="Pics/Armory.png" alt="Armory"onclick="openModal(this)">
+                    <p>Produces batches of guns</p>
                 </div>
             </div>
         </div>
     </section>
 
 
+
+
+<section id="gallery">
+    <div class="container">
+        <h2>Safe Houses</h2>
+        <div class="safe-house-sections">
+            <div class="safe-house-section">
+                <h3>Cellar</h3>
+                <img src="Pics/Celler.png" alt="Celler" onclick="openModal(this)">
+                <p>Allows players to store batches of booze</p>
+            </div>
+            <div class="safe-house-section">
+                <h3>Treasury</h3>
+                <img src="Pics/Treasury.png" alt="Treasury" onclick="openModal(this)">
+                <p>Allows players to store batches of precious metals</p>
+            </div>
+            <div class="safe-house-section">
+                <h3>Vault</h3>
+                <img src="Pics/Vault.png" alt="Vault" onclick="openModal(this)">
+                <p>Allows players to store batches of artifacts</p>
+            </div>
+            <div class="safe-house-section">
+                <h3>Arsenal</h3>
+                <img src="Pics/Arsenal.png" alt="Arsenal" onclick="openModal(this)">
+                <p>Allows players to store batches of guns</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="gallery">
+    <div class="container">
+        <h2>Weapons</h2>
+        <div class="weapon-sections">
+            <div class="weapon-section">
+                <h3>Tommy Gun Nest</h3>
+                <img src="Pics/Tommygun.png" alt="Tommy Gun Nest" onclick="openModal(this)">
+                <p>Protect two blocks (one to the right and one to the left of the structure)</p>
+            </div>
+            <div class="weapon-section">
+                <h3>Sniper's Perch</h3>
+                <img src="Pics/Sniper.png" alt="Sniper's Perch" onclick="openModal(this)">
+                <p>Attacks one space chosen by the player outside their territory</p>
+            </div>
+            <div class="weapon-section">
+                <h3>Dynamite Gate</h3>
+                <img src="Pics/DynamiteGate.png" alt="Dynamite Gate" onclick="openModal(this)">
+                <p>Allows player to destroy an opponent's one structure</p>
+            </div>
+            <div class="weapon-section">
+                <h3>TripWire Bomb</h3>
+                <img src="Pics/TripWire.png" alt="TripWire Bomb" onclick="openModal(this)">
+                <p>Allows the player to set a bomb in one space of their choice</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="gallery">
+    <div class="container">
+        <h2>Game Pieces</h2>
+        <div class="game-piecies">
+            <div class="game-piece">
+                <h3>Dices</h3>
+                <img src="Pics/Dice6.png" alt="6 Sided Dice" onclick="openModal(this)">
+                <p>A 6 Sided Dice (Probability- 1/6) for each player to throw on his turn</p>
+            </div>
+            <div class="game-piece">
+                <h3>Dices</h3>
+                <img src="Pics/Dice10.png" alt="10 Sided Dice" onclick="openModal(this)">
+                <p>A 10 Sided Dice (Probability- 1/10) for each player to throw on his turn</p>
+            </div>
+            <div class="game-piece">
+                <h3>Cards</h3>
+                <img src="Pics/MarketCards.png" alt="Cards" onclick="openModal(this)">
+                <p>A example of a Card (120 different valued cards like this would be there in the physical game) </p>
+            </div>
+            <div class="game-piece">
+                <h3>Trading Tables</h3>
+                <img src="Pics/TradingTables.png" alt="Tables" onclick="openModal(this)">
+                <p>Allows the player to trade using this table with the market or other players</p>
+            </div>
+            <div class="game-piece">
+                <h3>Chips</h3>
+                <img src="Pics/PokerChips.png" alt="PokerChips" onclick="openModal(this)">
+                <p>Allows the player to trade using this Chips with a specific value(money) with the market or other players</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</section>
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+    </div>
+    
+
+    <script src="onClick.js"></script>
+
+</section>
+    
     
 
     <footer>

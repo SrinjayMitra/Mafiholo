@@ -71,8 +71,8 @@ nav ul {
     display: inline-block;
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
+    margin: 20px;
+    padding: 20px;
     white-space: nowrap; 
     font-size: 1.1vw;
 }
@@ -160,17 +160,16 @@ a{
     font-family: monospace;
     font-size: 15px;
     color: rgb(223, 137, 32);
-    inline-size: auto;
+    inline-size: auto;  
 }
 #playTesting a{
     font-size: 20px;
     margin-right: 20px;
 }
 
-
 #flowchart img {
-    max-width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 300px;
     object-fit: contain;
     display: block;
     margin: auto ;
@@ -213,6 +212,133 @@ text-align: center;
 }
 
 
+.production-sections, .safe-house-sections, .weapon-sections, .game-piecies{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
+.production-section, .safe-house-section, .weapon-section, .game-piece {
+    border: 2px solid #e0c45c;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);  /* Transparent black */
+    padding: 20px;
+    width: 22%;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 
+.production-section img, .safe-house-section img, .weapon-section img, .game-piece img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
+.production-sectionh3, .safe-house-section h3, .weapon-section h3, .game-piece h3  {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #e0c45c;
+}
+
+.production-section p, .safe-house-section p, .weapon-section p, .game-piece p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 1em;
+    color: lightgoldenrodyellow;
+    line-height: 1.25;
+    word-spacing: 0;
+    letter-spacing: 0;
+    word-break: normal; /* Prevents words from breaking */
+    white-space: normal; /* Ensures normal spacing */
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .production-section, .safe-house-section, .weapon-section, .game-piece {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .production-section, .safe-house-section, .weapon-section, .game-piece {
+        width: 90%;
+    }
+}
+#gallery h2{
+    text-align: center;
+}
+.gallery-head{
+    font-size: 35px;
+}
+.gallery-head-p{
+text-align: center;
+font-size: larger;
+}
