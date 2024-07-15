@@ -27,8 +27,8 @@
       
       <!-- <p>Click the buttons to play or pause the audio.</p> -->
       
-      <button  onclick="playAudio()" type="button">Play</button>
-      <button  onclick="pauseAudio()" type="button">Pause</button> 
+      <button  class="download-button" onclick="playAudio()" type="button">Play</button>
+      <button  class="download-button" onclick="pauseAudio()" type="button">Pause</button> 
       <script src="audio.js"></script>
       
     <header>
@@ -104,14 +104,19 @@
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#backstory">Backstory</a></li>
                     <li><a href="#inspiration">Inspiration</a></li>
                     <li><a href="#features">Features</a></li>
+                    <li><a href="#tradeoff">Tradeoff and Dillemas</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#rulebook">RuleBook</a></li>
                     <li><a href="#flowchart">Flowchart</a></li>
                     <li><a href="#quant">Quantitative Analysis</a></li>
                     <li><a href="#playTesting">PlayTesting Logs</a></li>
+                    <li><a href="#meetinglogs">Meeting Logs</a></li>
+                    <li><a href="#gamepillars">Game Pillars</a></li>
                     <li><a href="#desc">Descriptions</a></li>
+                    <li><a href="#improvements">Future Improvements</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#ref">References</a></li>
                 </ul>
@@ -134,6 +139,33 @@
             <p>
                 Players take on the roles of influential <strong>mafia bosses</strong>, each with their own unique abilities and resources, strategically managing their resources, forming alliances, and outmaneuvering rivals to dominate the underworld by controlling key businesses such as speakeasies, gambling dens, and smuggling operations.
             </p>
+            <button class="download-button-Board" onclick="downloadImageBoard()">Download Game Image</button> </p>
+            <script src = "downloadBoard.js"></script>
+            <div class="board-visuals">
+            <div class="board-visual">
+                <h3>Board Visuals</h3>
+                <img src="Pics/BoardGame.png" alt="BoardGame" onclick="openModal(this)">
+                <p>Visuals of the Board of the Game</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="backstory">
+        <div class="container">
+            <h2>Backstory of The Game</h2>
+            <p>
+                The game is set in the <b>1920s</b> when <b>Prohibition</b> was a law in the United States, characterized by <b>jazz music</b>, underground <b>speakeasies</b>, and an illegal economy thriving on the selling of alcohol as well as contraband. The city looks like <b>New York</b>; it is full of life and opportunities, though this can be dangerous. The skyline is full of tall buildings while the streets are filled with luxurious theatres, hazy jazz halls, and dark alleys.
+            </p>
+            <p>
+                This gangster-ridden metropolis has been divided into sections ruled by different groups fighting each other to establish themselves as powerful figures within its depths. The story involves four immigrants who bring their skills and aspirations from their home countries to the illegal businesses they run. These individuals have come to America intending to find richness but instead, they become trapped within a criminal underworld.
+            </p>
+            <p>
+                Their purpose is establishing empires at the expense of their opponents, fostering alliances and deceptions as well as trying not to be caught by police.
+            </p>
+            <p class="highlight">
+                Experience the thrill of building your empire, navigating the dangerous streets, and making deals in the shadows of the jazz age!
+            </p>
         </div>
     </section>
 
@@ -146,6 +178,24 @@
         </div>
     </section>
 
+    <section id="tradeoff">
+        <div class="container">
+            <h2>Tradeoff and Dillemas</h2>
+            <!-- <p>The game is played over <strong>30 turns</strong>, each consisting of various actions players can take. At the beginning of each turn, a market card is drawn to set the price of goods. Players then roll a six-sided die to determine their order of play for that round. Actions include <strong>producing goods, building structures, leveling up structures, dismantling structures,</strong> and <strong>selling goods</strong>. Players can also <strong>trade</strong> or engage in <strong>attacks</strong> such as <strong>robbing</strong> or <strong>sabotaging</strong> other players' structures.</p>
+            <p>To <strong>sell goods</strong>, players move their pieces toward market spaces and throw dice to determine success based on their proximity to the market. <strong>Trading</strong> requires mutual agreement and use of the bargain table to set prices. <strong>Attacks</strong> involve dice rolls to determine success and can result in gaining or losing <strong>fame tokens</strong>.</p>
+            <p>The goal is to accumulate the most points by the end of the game, earned through <strong>fame, structures,</strong> and <strong>money</strong>. <strong>Fame</strong> can be gained or lost through various actions, such as injuring players, sabotaging structures, or failing to achieve certain goals.</p> -->
+        </div>
+    </section>
+
+    <section id="gamepillars">
+        <div class="container">
+            <h2>Three Game Pillars</h2>
+            <!-- <p>The game is played over <strong>30 turns</strong>, each consisting of various actions players can take. At the beginning of each turn, a market card is drawn to set the price of goods. Players then roll a six-sided die to determine their order of play for that round. Actions include <strong>producing goods, building structures, leveling up structures, dismantling structures,</strong> and <strong>selling goods</strong>. Players can also <strong>trade</strong> or engage in <strong>attacks</strong> such as <strong>robbing</strong> or <strong>sabotaging</strong> other players' structures.</p>
+            <p>To <strong>sell goods</strong>, players move their pieces toward market spaces and throw dice to determine success based on their proximity to the market. <strong>Trading</strong> requires mutual agreement and use of the bargain table to set prices. <strong>Attacks</strong> involve dice rolls to determine success and can result in gaining or losing <strong>fame tokens</strong>.</p>
+            <p>The goal is to accumulate the most points by the end of the game, earned through <strong>fame, structures,</strong> and <strong>money</strong>. <strong>Fame</strong> can be gained or lost through various actions, such as injuring players, sabotaging structures, or failing to achieve certain goals.</p> -->
+        </div>
+    </section>
+    
     <section id="features">
         <div class="container">
             <h2>Game Features</h2>
@@ -194,9 +244,9 @@
             Whether you're a cunning mob boss, a ruthless enforcer, or a savvy bootlegger, this rulebook provides you with all the essential
              rules, strategies, and secrets you need to rise to power. Master the art of deception, build your empire, and outsmart your rivals 
              as you delve into the thrilling life of crime. <strong>The underworld awaits—are you ready to rule it?</strong></p>
-             <a href="https://docs.google.com/document/d/1_wQJewvaLPi7mGrPG7hthlHh6hBgQqea/edit?usp=sharing&ouid=115214689029356402840&rtpof=true&sd=true" target="_blank">CLICK HERE FOR THE FULL RULEBOOK</a> 
+            <a href="https://docs.google.com/document/d/1ux5arEgNoiC0qKAim8PP6HVTmtsAVtR7/edit?usp=sharing&ouid=115214689029356402840&rtpof=true&sd=true" target="_blank">CLICK HERE FOR THE FULL RULEBOOK</a> 
             <iframe
-            src="https://docs.google.com/document/d/1_wQJewvaLPi7mGrPG7hthlHh6hBgQqea/edit?usp=sharing&ouid=115214689029356402840&rtpof=true&sd=true"
+            src="https://docs.google.com/document/d/1ux5arEgNoiC0qKAim8PP6HVTmtsAVtR7/edit?usp=sharing&ouid=115214689029356402840&rtpof=true&sd=true"
             frameBorder="0"
             scrolling="auto"
             height="800px"
@@ -209,9 +259,12 @@
     <section id="flowchart">
         <div class="container">
             <h2>FlowChart</h2>
-            <p class="FindFlowchartBelow">Find the Flowchart below </p><p class="CLICK">CLICK ON THE IMAGE TO SEE A FULL CLEAR IMAGE OF THE FLOWCHART</p>
-            <!-- <img src=pics/Flowchart.png alt="ERROR LOADING IMAGE!!"> -->
-            <a href="https://ibb.co/yfPC9fv" target="_Blank"><img src="https://i.ibb.co/yfPC9fv/Benefits-of-Exercise.png" alt="Flowchart" border="0"></a>
+            <p class="FindFlowchartBelow">Find the Flowchart below </p><p class="CLICK">CLICK ON THE IMAGE TO SEE A FULL CLEAR IMAGE OF THE FLOWCHART OR
+            <button class="download-button" onclick="downloadImage()">Download Flowchart</button> </p>
+            <script src = "download.js"></script>
+            
+            <a href="https://ibb.co/xfBzRzd" target="_blank"><img src="https://i.ibb.co/b2CN8ND/game-Flowchart.png" alt="game-Flowchart" border="0"></a>
+
         </div>
     </section>
 
@@ -219,7 +272,22 @@
     <section id="quant">
         <div class="container">
             <h2>Quantitative Analysis of Game Balance</h2>
-            <p>Welcome to the world of mafia, guns, booze, and gold QUANT. Dive into an epic adventure where you rule the underworld.</p>
+            <p>
+                This document presents a <b>quantitative analysis of game balance</b>, providing an in-depth review of various game mechanics and 
+                their impact on player experience. By examining data and identifying trends, this analysis aims to offer valuable insights for <b>
+                optimizing game design</b> and ensuring a <b>fair and engaging gameplay experience</b>.
+            </p>
+                
+            <a href="https://docs.google.com/document/d/1F_HSDhuDA_I_riZj5i5O2M4rn0tHbhBh/edit?usp=sharing&ouid=115214689029356402840&rtpof=true&sd=true" target="_blank">
+               CLICK HERE FOR THE FULL Analysis</a> 
+            
+            <iframe
+            src="https://docs.google.com/document/d/1F_HSDhuDA_I_riZj5i5O2M4rn0tHbhBh/edit?usp=sharing&ouid=115214689029356402840&rtpof=true&sd=true"
+            frameBorder="0"
+            scrolling="auto"
+            height="800px"
+            width="100%" 
+            ></iframe>
         </div>
     </section>
 
@@ -242,6 +310,49 @@
         </div>
     </section>
 
+    <section id="meetinglogs">
+    <div class="container">
+        <h2>Meeting Logs</h2>
+        <p>
+            This document compiles <b>meeting logs</b> from various sessions, offering insights into discussions, decisions, and action items.
+            By documenting our interactions and outcomes, we aim to enhance <b>team collaboration</b> and ensure <b>clarity and accountability</b>
+            in our project progress and planning.
+        </p>
+        
+            
+        <a href="https://docs.google.com/document/d/1kBLbFO5Z4aV8QEa_mokfRqvq9KICB_6c/edit?usp=sharing&ouid=115214689029356402840&rtpof=true&sd=true" target="_blank">
+           CLICK HERE FOR THE FULL Meeting Logs</a> 
+        
+        <iframe
+        src="https://docs.google.com/document/d/1kBLbFO5Z4aV8QEa_mokfRqvq9KICB_6c/edit?usp=sharing&ouid=115214689029356402840&rtpof=true&sd=true"
+        frameBorder="0"
+        scrolling="auto"
+        height="800px"
+        width="100%" 
+        ></iframe>
+     </div>
+     </section>
+
+
+
+    <section id="tradeoff">
+        <div class="container">
+            <h2>Tradeoff and Dillemas</h2>
+            <!-- <p>The game is played over <strong>30 turns</strong>, each consisting of various actions players can take. At the beginning of each turn, a market card is drawn to set the price of goods. Players then roll a six-sided die to determine their order of play for that round. Actions include <strong>producing goods, building structures, leveling up structures, dismantling structures,</strong> and <strong>selling goods</strong>. Players can also <strong>trade</strong> or engage in <strong>attacks</strong> such as <strong>robbing</strong> or <strong>sabotaging</strong> other players' structures.</p>
+            <p>To <strong>sell goods</strong>, players move their pieces toward market spaces and throw dice to determine success based on their proximity to the market. <strong>Trading</strong> requires mutual agreement and use of the bargain table to set prices. <strong>Attacks</strong> involve dice rolls to determine success and can result in gaining or losing <strong>fame tokens</strong>.</p>
+            <p>The goal is to accumulate the most points by the end of the game, earned through <strong>fame, structures,</strong> and <strong>money</strong>. <strong>Fame</strong> can be gained or lost through various actions, such as injuring players, sabotaging structures, or failing to achieve certain goals.</p> -->
+        </div>
+    </section>
+
+
+    <section id="improvements">
+        <div class="container">
+            <h2>Future Improvements</h2>
+            <p>Welcome to the world of mafia, guns, booze, and gold improvements. Dive into an epic adventure where you rule the underworld.</p>
+        </div>
+    </section>
+
+
     <section id="team">
         <div class="container">
             <h2>Team Members</h2>
@@ -252,7 +363,7 @@
                     <p>Expert in strategic planning and underworld dealings.</p>
                 </li>
                 <li>
-                    <h3>Abhay</h3>
+                    <h3>Abhijot</h3>
                     <p>Master of covert operations and espionage.</p>
                 </li>
                 <li>

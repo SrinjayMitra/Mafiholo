@@ -74,7 +74,7 @@ nav ul {
     margin: 20px;
     padding: 20px;
     white-space: nowrap; 
-    font-size: 1.1vw;
+    /* font-size: 1.1vw; */
 }
 
 nav ul li {
@@ -83,13 +83,13 @@ nav ul li {
 }
 
 nav ul li a {
-    font-size: 19px;
+    font-size:1.2em;
     color: gold;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease; /* Transition color with a duration of 0.3 seconds */
     cursor: pointer; /* Default cursor */
-    font-size: 1.1vw;
+    /* font-size: 1.1vw; */
 }
 
 nav ul li a:hover {
@@ -342,3 +342,78 @@ text-align: center;
 text-align: center;
 font-size: larger;
 }
+.download-button, .download-button-Board {
+    background-color:rgba(0, 0, 0, 0.2);
+    border: none;
+    color: gold;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.board-visuals {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.board-visual {
+    border: 2px solid #e0c45c;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);  /* Transparent black */
+    padding: 20px;
+    width: 22%;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.board-visual img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.board-visual h3  {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #e0c45c;
+}
+
+.board-visual p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 1.3em;
+    color: lightgoldenrodyellow;
+    line-height: 1.25;
+    word-spacing: 0;
+    letter-spacing: 0;
+    word-break: normal; /* Prevents words from breaking */
+    white-space: normal; /* Ensures normal spacing */
+}
+
+
+
+
+
+
+
+
+
+
