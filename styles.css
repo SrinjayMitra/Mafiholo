@@ -83,7 +83,7 @@ nav ul li {
 }
 
 nav ul li a {
-    font-size:1.2em;
+    font-size:19px;
     color: gold;
     text-decoration: none;
     font-weight: bold;
@@ -363,9 +363,6 @@ font-size: larger;
 
 
 
-
-
-
 .board-visuals {
     display: flex;
     justify-content: space-around;
@@ -377,20 +374,21 @@ font-size: larger;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.3);  /* Transparent black */
     padding: 20px;
-    width: 22%;
+    width: auto;
     margin: 10px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .board-visual img {
-    width: 100%;
+    width: 700px;
     height: auto;
     border-radius: 10px;
     cursor: pointer;
 }
 
 .board-visual h3  {
+    text-align: center;
     margin-top: 10px;
     font-size: 1.2em;
     color: #e0c45c;
@@ -406,13 +404,16 @@ font-size: larger;
     letter-spacing: 0;
     word-break: normal; /* Prevents words from breaking */
     white-space: normal; /* Ensures normal spacing */
+    text-align: center;
 }
 
+#gameboard h2{
+    text-align: center;
+}
 
-
-
-
-
+.video{
+    justify-content: center;
+}
 
 
 

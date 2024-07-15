@@ -35,6 +35,7 @@
         <div class="container">
             
             <h1 ><b>Mafia Wars: The Prohibition</b></h1>
+            <h2><b>Rule The Underworld</b></h2>
             <div class="box">
                 <span style="--i: 1">
                   <i>MAFIA</i>
@@ -102,27 +103,52 @@
                 </span>
             </div>
             <nav>
-                <ul>
+                <ul class="navbar" id="navbar">
+                    <li><a href="#gameBoard">Game Board</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#backstory">Backstory</a></li>
                     <li><a href="#inspiration">Inspiration</a></li>
                     <li><a href="#features">Features</a></li>
-                    <li><a href="#tradeoff">Tradeoff and Dillemas</a></li>
+                    <li><a href="#tradeoff">Tradeoff and Dilemmas</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#rulebook">RuleBook</a></li>
                     <li><a href="#flowchart">Flowchart</a></li>
                     <li><a href="#quant">Quantitative Analysis</a></li>
                     <li><a href="#playTesting">PlayTesting Logs</a></li>
                     <li><a href="#meetinglogs">Meeting Logs</a></li>
-                    <li><a href="#gamepillars">Game Pillars</a></li>
-                    <li><a href="#desc">Descriptions</a></li>
-                    <li><a href="#improvements">Future Improvements</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#ref">References</a></li>
+                    <li class="more">
+                        <a href="javascript:void(0)" onclick="toggleMore()">More &#9662;</a>
+                        <ul id="more-menu">
+                            <li><a href="#gamepillars">Game Pillars</a></li>
+                            <li><a href="#characters">Characters</a></li>
+                            <li><a href="#desc">Descriptions</a></li>
+                            <li><a href="#gamepillars">Game Pillars</a></li>
+                            <li><a href="#gametime">Game Session Time</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#ref">References</a></li>
+                        </ul>
+                    </li>
                 </ul>
-            </nav>
+            </nav>            
+            <script src = "download.js"></script>
         </div>
     </header>
+
+    <section id="gameboard">
+        <div class="container">
+            <h2>Game Board</h2>
+            <div class="board-visuals">
+                <div class="board-visual">
+                    <h3>Board Visuals</h3>
+                    <img src="Pics/BoardGame.png" alt="BoardGame" onclick="openModal(this)">
+                    <p>Visuals of the Board of the Game</p>
+                    <button class="download-button-Board" onclick="downloadImageBoard()">Download Game Image</button> </p>
+                    <script src = "downloadBoard.js"></script>
+                </div>
+                </div>
+            </div>
+    </section>
+
 
     <section id="about">
         <div class="container">
@@ -139,17 +165,13 @@
             <p>
                 Players take on the roles of influential <strong>mafia bosses</strong>, each with their own unique abilities and resources, strategically managing their resources, forming alliances, and outmaneuvering rivals to dominate the underworld by controlling key businesses such as speakeasies, gambling dens, and smuggling operations.
             </p>
-            <button class="download-button-Board" onclick="downloadImageBoard()">Download Game Image</button> </p>
-            <script src = "downloadBoard.js"></script>
-            <div class="board-visuals">
-            <div class="board-visual">
-                <h3>Board Visuals</h3>
-                <img src="Pics/BoardGame.png" alt="BoardGame" onclick="openModal(this)">
-                <p>Visuals of the Board of the Game</p>
-            </div>
+            <div style="text-align: center;">
+                <iframe width="960" height="515" src="https://www.youtube.com/embed/c57nu6WnlEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </section>
+    
+    
 
     <section id="backstory">
         <div class="container">
@@ -181,18 +203,87 @@
     <section id="tradeoff">
         <div class="container">
             <h2>Tradeoff and Dillemas</h2>
-            <!-- <p>The game is played over <strong>30 turns</strong>, each consisting of various actions players can take. At the beginning of each turn, a market card is drawn to set the price of goods. Players then roll a six-sided die to determine their order of play for that round. Actions include <strong>producing goods, building structures, leveling up structures, dismantling structures,</strong> and <strong>selling goods</strong>. Players can also <strong>trade</strong> or engage in <strong>attacks</strong> such as <strong>robbing</strong> or <strong>sabotaging</strong> other players' structures.</p>
-            <p>To <strong>sell goods</strong>, players move their pieces toward market spaces and throw dice to determine success based on their proximity to the market. <strong>Trading</strong> requires mutual agreement and use of the bargain table to set prices. <strong>Attacks</strong> involve dice rolls to determine success and can result in gaining or losing <strong>fame tokens</strong>.</p>
-            <p>The goal is to accumulate the most points by the end of the game, earned through <strong>fame, structures,</strong> and <strong>money</strong>. <strong>Fame</strong> can be gained or lost through various actions, such as injuring players, sabotaging structures, or failing to achieve certain goals.</p> -->
+            <p>
+                <b> Trade-offs:</b>
+            </p>
+            
+            <p>
+                <b>A)</b> The players may be left with the option of taking actions that will result in immediate benefits or rewards, for example making and selling large amounts of goods to get money quickly or investing in the security and storage of these goods for long-term stability. Overproduction without sufficient storage or defense could expose players to theft as well as sabotage.
+            </p>
+            
+            <p>
+                <b>B)</b> It is a critical trade-off between allocating resources to offensive structures (e.g., dynamite crates for destroying opponent structures) or defensive ones (e.g., Tommy gun nests for protecting their structures). A too-aggressive strategy may leave a player’s holdings unprotected.
+            </p>
+            
+            <p>
+                <b>C)</b> They must choose between constructing new buildings, upgrading existing ones, or saving cash for later opportunities. Each option has positive repercussions in terms of productivity capacity, storage space availability, and general game progress both immediately and over time.
+            </p>
+            
+            <p>
+                <b> Dilemmas:</b>
+            </p>
+            
+            <p>
+                <b>A)</b> The safehouse is always a restricted space, and when its limits are reached players must abandon some goods or turn over a round to sell them to avoid failure at the market and loss of fame. This creates tension between maximizing production on the one hand and managing risks on the other.
+            </p>
+            
+            <p>
+                <b>B)</b> Indebted players are caught in a dilemma of whether to surrender their rounds to promote other factions or not. This action can reduce the debt/s they owe but will also lead them to lose fame. This creates a compromise between financial stability and keeping the fame obtained in the rounds before which must be carefully considered before deciding.
+            </p>
+            
+            <p>
+                <b>C)</b> The decision of where and when to sell commodities is filled with uncertainty because of market volatility as well as travel hazards. They should put potential profits against chances of failure and lost rounds particularly when selling to far-off markets.
+            </p>
+            
+            <p>
+                <b> Sacrifices:</b>
+            </p>
+            
+            <p>
+                <b>A)</b> Trading a round to dismantle will give the player 50% of a structure’s initial cost which provides instant cash but cuts long-term capabilities. One must weigh the immediate financial benefit against the loss in production and defense.
+            </p>
+            
+            <p>
+                <b>B)</b> It is possible for substantial rewards to come from giving up goods or reputation to sabotage or steal from others, yet that happens with considerable risk if it fails. Any attack is a calculated gamble because every failed attempt is a loss in fame and a wasted round.
+            </p>
+            
+            <p>
+                <b> Risks and rewards:</b>
+            </p>
+            
+            <p>
+                <b>A)</b> Using dynamite crates or attacking heavily fortified structures are very dangerous and can yield high payoffs. If they are successful, it can break the opponents’ backbone and bring lots of fame, but if they fail, it may result in huge setbacks.
+            </p>
+            
+            <p>
+                <b>B)</b> Investing in high-level production and storage would greatly help players increase their capabilities simultaneously, yet they require a substantial upfront amount. The trick is to collect enough resources for these investments without leaving oneself vulnerable to attacks.
+            </p>
+            
+            <p>
+                <b>C)</b> Engaging with the market brings in some risk where players can either benefit from a good chunk of money or face price cuts that are dictated by the market. Every deal is left in the hands of market cards which cannot be anticipated.
+            </p>
+            
+            
         </div>
     </section>
+
+
 
     <section id="gamepillars">
         <div class="container">
             <h2>Three Game Pillars</h2>
-            <!-- <p>The game is played over <strong>30 turns</strong>, each consisting of various actions players can take. At the beginning of each turn, a market card is drawn to set the price of goods. Players then roll a six-sided die to determine their order of play for that round. Actions include <strong>producing goods, building structures, leveling up structures, dismantling structures,</strong> and <strong>selling goods</strong>. Players can also <strong>trade</strong> or engage in <strong>attacks</strong> such as <strong>robbing</strong> or <strong>sabotaging</strong> other players' structures.</p>
-            <p>To <strong>sell goods</strong>, players move their pieces toward market spaces and throw dice to determine success based on their proximity to the market. <strong>Trading</strong> requires mutual agreement and use of the bargain table to set prices. <strong>Attacks</strong> involve dice rolls to determine success and can result in gaining or losing <strong>fame tokens</strong>.</p>
-            <p>The goal is to accumulate the most points by the end of the game, earned through <strong>fame, structures,</strong> and <strong>money</strong>. <strong>Fame</strong> can be gained or lost through various actions, such as injuring players, sabotaging structures, or failing to achieve certain goals.</p> -->
+            <p>
+                <b> 1) What:</b> Build your criminal empire by producing, trading, and selling illicit goods while defending your territory and sabotaging rivals.
+            </p>
+            
+            <p>
+                <b> 2) How:</b> Utilize strategic planning to manage resources, deploy defensive and offensive measures, and navigate the black market economy.
+            </p>
+            
+            <p>
+                <b> 3) Why:</b> To become the most powerful and influential mafia faction in the city by gaining fame, wealth, and territory.
+            </p>
+            
         </div>
     </section>
     
@@ -291,6 +382,29 @@
         </div>
     </section>
 
+
+    <section id="dynamics">
+        <div class="container">
+            <h2>Game Dynamics</h2>
+            <p>
+                This document presents a <b>Game Dynamics</b>, providing an in-depth review of various game dynamics and 
+                their impact on player experience.
+            </p>
+                
+            <a href="https://docs.google.com/document/d/1LeTX2UbBwInXjSXziY7zGhvEvk_hdX0r/edit?usp=sharing&ouid=115214689029356402840&rtpof=true&sd=true" target="_blank">
+               CLICK HERE FOR THE FULL Game Dynamics</a> 
+            
+            <iframe
+            src="https://docs.google.com/document/d/1LeTX2UbBwInXjSXziY7zGhvEvk_hdX0r/edit?usp=sharing&ouid=115214689029356402840&rtpof=true&sd=true"
+            frameBorder="0"
+            scrolling="auto"
+            height="800px"
+            width="100%" 
+            ></iframe>
+        </div>
+    </section>
+
+
     <section id="playTesting">
         <div class="container">
             <h2>Playtesting Logs</h2>
@@ -335,20 +449,136 @@
 
 
 
-    <section id="tradeoff">
+ <section id="characters">
         <div class="container">
-            <h2>Tradeoff and Dillemas</h2>
-            <!-- <p>The game is played over <strong>30 turns</strong>, each consisting of various actions players can take. At the beginning of each turn, a market card is drawn to set the price of goods. Players then roll a six-sided die to determine their order of play for that round. Actions include <strong>producing goods, building structures, leveling up structures, dismantling structures,</strong> and <strong>selling goods</strong>. Players can also <strong>trade</strong> or engage in <strong>attacks</strong> such as <strong>robbing</strong> or <strong>sabotaging</strong> other players' structures.</p>
-            <p>To <strong>sell goods</strong>, players move their pieces toward market spaces and throw dice to determine success based on their proximity to the market. <strong>Trading</strong> requires mutual agreement and use of the bargain table to set prices. <strong>Attacks</strong> involve dice rolls to determine success and can result in gaining or losing <strong>fame tokens</strong>.</p>
-            <p>The goal is to accumulate the most points by the end of the game, earned through <strong>fame, structures,</strong> and <strong>money</strong>. <strong>Fame</strong> can be gained or lost through various actions, such as injuring players, sabotaging structures, or failing to achieve certain goals.</p> -->
+            <h2>Characters</h2>
+            <p>
+                <b>A) Marco Rossi ("The Chemist") (The Drug Dealer) (Sicily, Italy)</b>
+            </p>
+            
+            <p>
+                Marco Rossi grew up in the narrow streets of Palermo, where he was surrounded by the influence of the Sicilian Mafia. His father was a small-time pharmacist with a knack for chemistry, and Marco inherited his talent for concoctions. However, the family business struggled, and Marco turned to the local mob for work, quickly proving his worth with his skill in creating illicit substances. The allure of America drew him across the Atlantic. Arriving in New York, Marco found a city ripe with opportunity for someone with his skills. He quickly established himself in Little Italy through networking and manufacturing drugs. Using a genuine pharmaceutical shop as cover, Marco produces whatever drug from heroin to cocaine that may be trendy. He is meticulous and strategic, always staying one step ahead of the law and his competitors. Marco is methodical and intelligent, with a deep understanding of chemistry and a coldly calculating demeanor. He is loyal to those he considers family but ruthless to his enemies. His immigrant roots make him fiercely protective of his community but knows no bounds when it comes to ambition or greed.
+            </p>
+            
+            <p>
+                <b>B) Katarzyna Nowak ("Kat") (The Gun Runner) (Warsaw, Poland)</b>
+            </p>
+            
+            <p>
+                Katarzyna Nowak, popularly known as Kat, grew up in war-torn and politically unsettled Poland. Her family was involved in the resistance against the occupying forces and she learned how to handle weapons at a young age. The Nowak family fled to America after the war in search of safety as well as starting a new life. In New York’s bustling immigrant communities, Kat found that her skills were highly sought after. Kat’s initial involvement included smuggling guns for the Polish resistance within her homeland but she later saw more lucrative opportunities for herself in America’s underworld. She has established networks that import weapons from Europe and sell them to various criminal factions within the city. Her warehouses are located near the docks where she supervises delivery and distribution. With remarkable reliability and discretion, she has become an invaluable player in the underworld. She is resourceful and tough with a sharp mind for logistics and a down-to-earth attitude. She is very independent after having fought for everything she has; loyalty and integrity represent some of her most cherished values. Having encountered several life experiences she is suspicious of others yet once convinced she becomes an unwavering partner.
+            </p>
+            
+            <p>
+                <b>C) Lev Petrov ("The Dealer") (The Artifact Smuggler) (Odesa, Ukraine)</b>
+            </p>
+            
+            <p>
+                Lev Petrov came from Odesa, a town recognized for its lively trading and history steeped in culture. His relatives were esteemed sellers of antiquities with Lev growing up amidst priceless relics and historical items. After the upheavals of the Russian Revolution and the ensuing Civil War, Petrovs fled to America with a little bit of knowledge and a few precious things. In New York City Lev found a niche in stolen and smuggled artifacts on the black market. He developed relationships with corrupt officials as well as criminals, through which he facilitated the movement of valuable things from Europe and elsewhere. Lev operates out of a seemingly legitimate antique shop which is located in one of the most affluent neighborhoods in New York City that specializes in both legal sales and illegal dealings. His deep insight into art and history gives him an edge over other traders since he can easily make sound judgments. Lev is charmingly cultured with a taste for the good life. With enough understanding, he can be clever enough to maneuver through any complexities inherent within the black market industry. While he enjoys the thrill of the trade, he also harbors a deep respect for the artifacts he deals in, seeing himself as a protector of cultural heritage, although in a dubious manner.
+            </p>
+            
+            <p>
+                <b>D) Aisling O'Connor ("Ash”) (The Boot Legger) (Dublin, Ireland)</b>
+            </p>
+            
+            <p>
+                Aisling O'Connor or Ash as she is more commonly known, was brought up in the poor neighbourhoods of Dublin where her family operated a small bar. The O’Connors were forced to flee Ireland by the tough economic conditions and political upheaval. In New York City, Ash’s family tried to set up a legal business only for prohibition to throw them into disarray. Having learned brewing and distilling informally from her family’s pub, Ash saw an opportunity in the illegal booze market. Starting with limited homemade moonshine sold through speakeasies, her operations soon expanded. This entailed creating a supply chain for a variety of illicit products and services that she was offering. Ash's base is a hidden distillery located underground in one of the rundown buildings where she supervises the production and sale of different types of alcohol. Ash is hot-headed and strong-willed with a sharp tongue and assertive demeanour. She has immense pride in both her Irish heritage and America’s success story. Her entrepreneurial spirit drives her to take risks, and her natural leadership skills make her a force to be reckoned with. Her team members are like siblings since she treasures solidarity.
+            </p>
+            
+         </div>
+    </section> 
+
+    <section id="gametime">
+        <div class="container">
+            <h2>Typical Game Duration</h2>
+            <p>
+               1) The total game lasts for a varied time between <b>1 hr to 2 hrs</b>. It is dependent on the experience level of the players. The first-time players take more time in taking turns as compared to the experienced players.
+            </p>
+            
+            <p>
+               2) Each turn takes <b>30 seconds to 60 seconds</b> depending upon the progress of the game. In the beginning, players take less time to decide as a smaller number of options are available to them, but as the game progresses, the number of options starts increasing in the game.
+            </p>            
         </div>
     </section>
-
 
     <section id="improvements">
         <div class="container">
             <h2>Future Improvements</h2>
-            <p>Welcome to the world of mafia, guns, booze, and gold improvements. Dive into an epic adventure where you rule the underworld.</p>
+            <p>
+                <b>A) Police raids:</b>
+            </p>
+            
+            <p>
+                <b>I)</b> Happens by chance or as a result of certain actions. To determine the result of a raid, roll dice. Potential results include production being temporarily stopped, goods being confiscated, or loss of reputation.
+            </p>
+            
+            <p>
+                <b>B) Avoiding police:</b>
+            </p>
+            
+            <p>
+                <b>I)</b> Create cover-up stores to minimize the chances of a raid. Use a round to bribe the police (paying money to evade punishment).
+            </p>
+            
+            <p>
+                <b>C) Cover-up shops:</b>
+            </p>
+            
+            <p>
+                <b>I)</b> Speakeasy: Hides alcohol production and generates additional income.
+            </p>
+            
+            <p>
+                <b>II)</b> Pawn Shop: Hides artifact production and generates additional income.
+            </p>
+            
+            <p>
+                <b>III)</b> Cafe: Hides drug production and generates additional income.
+            </p>
+            
+            <p>
+                <b>IV)</b> Gun Shop: Hides gun production and generates additional income.
+            </p>
+            
+            <p>
+                <b>D) Building cover-up shops:</b>
+            </p>
+            
+            <p>
+                <b>I)</b> It is expensive to build and takes a round. It has ongoing benefits and protects against police attacks.
+            </p>
+            
+            <p>
+                <b>E) Character specialization:</b>
+            </p>
+            
+            <p>
+                <b>I)</b> At the beginning of the game, players must choose a specialization. Specialization gives production bonuses for all goods belonging to it.
+            </p>
+            
+            <p>
+                <b>F) Forming alliances:</b>
+            </p>
+            
+            <p>
+                <b>I)</b> During each player’s turn they can form alliances. Share with your allies any specialization bonuses that you get. These alliances may be broken by agreement between two sides or some actions.
+            </p>
+            
+            <p>
+                <b>G) Alliance benefits:</b>
+            </p>
+            
+            <p>
+                <b>I)</b> Shared production bonuses.
+            </p>
+            
+            <p>
+                <b>II)</b> Enhanced trading opportunities.
+            </p>
+            
+            <p>
+                <b>III)</b> Collective defense against attacks and police raids.
+            </p>
+            
         </div>
     </section>
 
@@ -379,6 +609,14 @@
                     <p>Skilled in combat and defense strategies.</p>
                 </li>
             </ul>
+            <a href="https://docs.google.com/document/d/1ZiSXlSuCPpVkw0nNRKgxpI8hpMKVWscV/edit?usp=sharing&ouid=115214689029356402840&rtpof=true&sd=true" target="_blank">CLICK HERE FOR THE FULL RECORD</a> 
+            <iframe
+            src="https://docs.google.com/document/d/1ZiSXlSuCPpVkw0nNRKgxpI8hpMKVWscV/edit?usp=sharing&ouid=115214689029356402840&rtpof=true&sd=true"
+            frameBorder="0"
+            scrolling="auto"
+            height="800px"
+            width="100%" 
+            ></iframe>
         </div>
     </section>
     
@@ -392,7 +630,7 @@
                     <h3>Rule Book of Mafia Wars Game</h3>
                     <ul>
                         <li><strong>Source:</strong> RuleBook - Google Docs.pdf</li>
-                        <li><strong>Details:</strong> This document provided the detailed rules, gameplay mechanics, and inspiration for the game THGHW. It outlines the game's structure, including the drawing of market cards, rolling dice for player order, and the various actions players can take during their turns. It also highlights the production, trading, and attack mechanisms that define the game's strategic depth.</li>
+                        <li><strong>Details:</strong> This document provided the detailed rules, gameplay mechanics, and inspiration for the game Mafia Wars. It outlines the game's structure, including the drawing of market cards, rolling dice for player order, and the various actions players can take during their turns. It also highlights the production, trading, and attack mechanisms that define the game's strategic depth.</li>
                     </ul>
                 </li>
                 <li>
@@ -432,8 +670,8 @@
                     <p>Produces batches of booze</p>
                 </div>
                 <div class="production-section">
-                    <h3>Mines</h3>
-                    <img src="Pics/Mines.png" alt="Mines"onclick="openModal(this)">
+                    <h3>Labs</h3>
+                    <img src="Pics/Mines.png" alt="Labs"onclick="openModal(this)">
                     <p>Produces batches of precious metals</p>
                 </div>
                 <div class="production-section">
@@ -463,8 +701,8 @@
                 <p>Allows players to store batches of booze</p>
             </div>
             <div class="safe-house-section">
-                <h3>Treasury</h3>
-                <img src="Pics/Treasury.png" alt="Treasury" onclick="openModal(this)">
+                <h3>Stash</h3>
+                <img src="Pics/Treasury.png" alt="Stash" onclick="openModal(this)">
                 <p>Allows players to store batches of precious metals</p>
             </div>
             <div class="safe-house-section">

@@ -6,3 +6,15 @@ function downloadImage() {
     link.click();
     document.body.removeChild(link);
 }
+
+function toggleMore() {
+    var moreMenu = document.getElementById("more-menu");
+    if (moreMenu.style.display === "none" || moreMenu.style.display === "") {
+        moreMenu.style.display = "block";
+    } else {
+        moreMenu.style.display = "none";
+    }
+}
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("more-menu").style.display = "none";
+});
