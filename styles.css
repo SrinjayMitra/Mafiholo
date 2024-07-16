@@ -414,7 +414,9 @@ font-size: larger;
 .video{
     justify-content: center;
 }
-
-
+.gold-border {
+    border: 5px solid sandybrown;
+    box-sizing: border-box; /* Ensure border is included in the element's total width and height */
+}
 
 
